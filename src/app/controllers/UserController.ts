@@ -5,7 +5,7 @@ import User from '../models/User';
 
 class UserController {
     index (request: Request, response: Response) {
-        return response.send('ok');
+        return response.send({ user_id: request.user_id});
     }
 
     async store(request: Request, response: Response) {
